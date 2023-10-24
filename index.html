@@ -265,111 +265,125 @@
     <!-- Offerings division -->
     <div class="header-container flex center">
       <div class="container p60v" style="background-color: #f0f0f0">
-        <h3 class="blueheadingbig offerings-heading mb40">
-          <span style="color: black">Build Custom</span>
-          ERP with Zoho!
-        </h3>
-        <div class="offerings-grid-1 mb20">
-          <div
-            class="white-card flex center flex-column"
-            style="justify-content: flex-start"
-          >
-            <h3
-              class="whiteheadingnormal mb20"
-              style="text-align: center; line-height: 110%"
-            >
-              Automation-First Philosophy
-            </h3>
-            <p
-              class="whiteparah small"
-              style="text-align: center; font-weight: 400"
-            >
-              A custom ERP system, built on a low-code platform with advanced
-              visual workflow editors, ensures automation is not pushed to the
-              periphery of your ERP implementation as a mere value-add.
-            </p>
-          </div>
-          <div
-            class="white-card flex center flex-column"
-            style="justify-content: flex-start"
-          >
-            <h3
-              class="whiteheadingnormal mb20"
-              style="text-align: center; line-height: 110%"
-            >
-              Zero Hidden Costs
-            </h3>
-            <p
-              class="whiteparah small"
-              style="text-align: center; font-weight: 400"
-            >
-              Since users pay for the platform and data storage and not for the
-              degree of automation, customizations, or third-party integrations,
-              you're always in control of your ERP spends.
-            </p>
-          </div>
-          <div
-            class="white-card flex center flex-column"
-            style="justify-content: flex-start"
-          >
-            <h3
-              class="whiteheadingnormal mb20"
-              style="text-align: center; line-height: 110%"
-            >
-              Cloud-based
-            </h3>
-            <p
-              class="whiteparah small"
-              style="text-align: center; font-weight: 400"
-            >
-              Offers fast implementation, better collaboration, and increased
-              uptime at significantly lower costs and zero fixed capital. This
-              lets you focus better on your key competencies, leaving behind
-              maintenance and security woes to our experts.
-            </p>
+        <div class="key-benefits-heading-container mb20">
+          <h3 class="blueheadingbig offerings-heading">
+            <span style="color: black">Build Custom</span>
+            ERP with Zoho!
+          </h3>
+          <div style="margin-top: 12px">
+            <button class="key-benefits-button first-key-button">
+              <img
+                src="./zoho-erp/Arrow_button.png"
+                onclick="moveSliderToRight2()"
+                alt=""
+              />
+            </button>
+            <button class="key-benefits-button" onclick="moveSliderToLeft2()">
+              <img src="./zoho-erp/Arrow_button.png" alt="" />
+            </button>
           </div>
         </div>
-        <div class="offerings-grid-2 mb20">
-          <div
-            class="white-card flex center flex-column"
-            style="justify-content: flex-start"
-          >
-            <h3
-              class="whiteheadingnormal mb20"
-              style="text-align: center; line-height: 110%"
+        <div class="grid-container">
+          <div class="offerings-grid mb20 overflow-scroll" id="gridSlider">
+            <div
+              class="white-card flex center flex-column"
+              style="justify-content: flex-start"
             >
-              ERPs That Mirror Your Operations
-            </h3>
-            <p
-              class="whiteparah small"
-              style="text-align: center; font-weight: 400"
+              <h3
+                class="whiteheadingnormal mb20"
+                style="text-align: center; line-height: 110%"
+              >
+                Automation-First Philosophy
+              </h3>
+              <p
+                class="whiteparah small"
+                style="text-align: center; font-weight: 400"
+              >
+                A custom ERP system, built on a low-code platform with advanced
+                visual workflow editors, ensures automation is not pushed to the
+                periphery of your ERP implementation as a mere value-add.
+              </p>
+            </div>
+            <div
+              class="white-card flex center flex-column"
+              style="justify-content: flex-start"
             >
-              Custom ERP platforms ensure that your business processes and
-              culture are at the heart of your ERP software, cascading into
-              every stage of your ERP build, release, and maintenance—from data
-              to design, from development to performance management.
-            </p>
-          </div>
-          <div
-            class="white-card flex center flex-column"
-            style="justify-content: flex-start"
-          >
-            <h3
-              class="whiteheadingnormal mb20"
-              style="text-align: center; line-height: 110%"
+              <h3
+                class="whiteheadingnormal mb20"
+                style="text-align: center; line-height: 110%"
+              >
+                Zero Hidden Costs
+              </h3>
+              <p
+                class="whiteparah small"
+                style="text-align: center; font-weight: 400"
+              >
+                Since users pay for the platform and data storage and not for
+                the degree of automation, customizations, or third-party
+                integrations, you're always in control of your ERP spends.
+              </p>
+            </div>
+            <div
+              class="white-card flex center flex-column"
+              style="justify-content: flex-start"
             >
-              Higher Utilization, Lower Maintenance
-            </h3>
-            <p
-              class="whiteparah small"
-              style="text-align: center; font-weight: 400"
+              <h3
+                class="whiteheadingnormal mb20"
+                style="text-align: center; line-height: 110%"
+              >
+                Cloud-based
+              </h3>
+              <p
+                class="whiteparah small"
+                style="text-align: center; font-weight: 400"
+              >
+                Offers fast implementation, better collaboration, and increased
+                uptime at significantly lower costs and zero fixed capital. This
+                lets you focus better on your key competencies, leaving behind
+                maintenance and security woes to our experts.
+              </p>
+            </div>
+            <div
+              class="white-card flex center flex-column"
+              style="justify-content: flex-start"
             >
-              Though a custom ERP takes more time during conception and
-              ideation, the build and maintenance take much less, as the focus
-              is on the business essentials at the time of different releases.
-              The utilization of features is also close to 100% since every
-              feature is built to address specific business exigencies.
-            </p>
+              <h3
+                class="whiteheadingnormal mb20"
+                style="text-align: center; line-height: 110%"
+              >
+                ERPs That Mirror Your Operations
+              </h3>
+              <p
+                class="whiteparah small"
+                style="text-align: center; font-weight: 400"
+              >
+                Custom ERP platforms ensure that your business processes and
+                culture are at the heart of your ERP software, cascading into
+                every stage of your ERP build, release, and maintenance—from
+                data to design, from development to performance management.
+              </p>
+            </div>
+            <div
+              class="white-card flex center flex-column"
+              style="justify-content: flex-start"
+            >
+              <h3
+                class="whiteheadingnormal mb20"
+                style="text-align: center; line-height: 110%"
+              >
+                Higher Utilization, Lower Maintenance
+              </h3>
+              <p
+                class="whiteparah small"
+                style="text-align: center; font-weight: 400"
+              >
+                Though a custom ERP takes more time during conception and
+                ideation, the build and maintenance take much less, as the focus
+                is on the business essentials at the time of different releases.
+                The utilization of features is also close to 100% since every
+                feature is built to address specific business exigencies.
+              </p>
+            </div>
           </div>
         </div>
 

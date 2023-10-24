@@ -77,3 +77,33 @@ const moveSliderToRight = () => {
     behavior: "smooth",
   });
 };
+
+// Slider Movements
+const moveSliderToLeft2 = () => {
+  console.log("hi2");
+
+  const scrollableElement = document.querySelector("#gridSlider");
+  console.log(scrollableElement);
+
+  const screenWidth = window.innerWidth;
+  const scrollAmount = 400;
+
+  scrollableElement.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+};
+
+const moveSliderToRight2 = () => {
+  console.log("hi1");
+  const scrollableElement = document.querySelector("#gridSlider");
+  console.log(scrollableElement);
+
+  const screenWidth = window.innerWidth;
+  const scrollAmount = -400;
+
+  scrollableElement.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+};
