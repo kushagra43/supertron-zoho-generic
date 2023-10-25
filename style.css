@@ -217,7 +217,7 @@ body {
     min-width: 300px;
 }
 
-.offerings-grid{
+.offerings-grid {
     display: flex;
     gap: 20px;
 }
@@ -247,7 +247,7 @@ body {
     min-width: 400px;
     margin-right: 20px;
     border-radius: 20px;
-    margin: 40px 20px 40px 0;
+    margin: 0px 20px 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -652,7 +652,7 @@ body {
     }
 
     .blueheadingbigger {
-        font-size: 50px;
+        font-size: 34px;
     }
 
     .pointer {
@@ -723,6 +723,15 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+    .p60v {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .details-middle {
+        margin: 0;
+    }
+
     .header-container {
         padding: 20px;
     }

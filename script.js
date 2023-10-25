@@ -107,3 +107,4 @@ const moveSliderToRight2 = () => {
     behavior: "smooth",
   });
 };
+
