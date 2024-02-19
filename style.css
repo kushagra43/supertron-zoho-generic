@@ -23,7 +23,7 @@ body {
 
 .navlogo {
     margin: auto 0;
-    height: 44px;
+    height: 55px;
 }
 
 /* Header */
@@ -41,7 +41,7 @@ body {
 }
 
 .header-img {
-    max-width: 500px;
+    max-width: 850px;
     width: 100%;
     margin-bottom: -10px;
 }
@@ -49,7 +49,6 @@ body {
 
 
 .form-container {
-    background-image: url('Form\ back.png');
     flex: 1;
     display: flex;
     justify-content: center;
@@ -94,7 +93,7 @@ body {
     border-radius: 9px;
     border: 3px solid rgba(255, 255, 255, 0.06);
     background: #FFF;
-    box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
     background-color: white;
     padding: 40px;
     width: 100%;
@@ -173,8 +172,15 @@ body {
     padding: 0 20px;
     margin: 0 20px;
     border: 3px solid;
-    border-image: linear-gradient(to bottom, rgba(161, 213, 255, 0) 0%, #0069EC 46.67%, rgba(161, 213, 255, 0) 100%);
+    border-image: linear-gradient(to bottom, rgba(161, 213, 255, 0) 0%, #000000 46.67%, rgba(161, 213, 255, 0) 100%);
     border-image-slice: 1;
+}
+
+.details-middle-2 {
+    border: 3px solid #888;
+    border-image-slice: 1;
+    border-top: #888;
+    border-bottom: #888;
 }
 
 /* Why Zoho division */
@@ -202,42 +208,63 @@ body {
     width: 80%;
 }
 
+/* Zoho One Testimonial*/
 
-/* Offerings */
-.offerings-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.white-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    justify-content: flex-start;
-    min-width: 300px;
-}
-
-.offerings-grid {
+.zoho-one
+{
     display: flex;
     gap: 20px;
 }
 
-.offerings-img-cont {
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px;
-    border-radius: 100%;
-    align-self: start;
+.zoho-test {
+    max-width: 600px;
     margin-right: 20px;
 }
 
-.offerings-img {
-    width: 48px;
-    height: 48px;
+.line
+{
+    border: 1PX solid #888;
 }
 
+.zoho-test-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.left-quote
+{
+    width: 36px;
+}
+
+/* Offerings */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    flex: 1 0 25%;
+    padding:  2rem;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #FFFFFF;
+    max-width: 400px;
+  }
+  
+  .grid-item img {
+    max-width: 200px;
+    height: auto;
+  }
 
 /* Slider */
 .slide {
@@ -246,11 +273,11 @@ body {
     height: 230px;
     min-width: 400px;
     margin-right: 20px;
-    border-radius: 20px;
     margin: 0px 20px 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: scroll;
 }
 
 .overflow-scroll {
@@ -354,8 +381,8 @@ body {
     overflow: hidden;
 }
 
-.bluebutton {
-    background: #0069EC;
+.redbutton {
+    background: #DE5547;
     padding: 20px 40px;
     border: none;
     border-radius: 8px;
@@ -372,9 +399,16 @@ body {
 
 .blueheadingbig {
     font-size: 46px;
-    font-weight: 600;
-    color: #0069EC;
+    font-weight: 500;
     line-height: 58px;
+}
+
+.blueheading-2 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 58px;
+    max-width: 550px; 
+    height: auto;
 }
 
 .blueheadingbigger {
@@ -385,7 +419,7 @@ body {
 }
 
 .red-blue {
-    background: linear-gradient(90deg, #E73239 0.01%, #013D84 101.72%);
+    background: linear-gradient(90deg, #E73239 0.01%, #013D84 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -414,11 +448,19 @@ body {
 }
 
 .small {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .bold {
     font-weight: 600;
+}
+
+.bold-2 {
+    font-weight: 500;
+}
+
+.ml20 {
+    margin-left: 20px;
 }
 
 .ml40 {
@@ -466,6 +508,9 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.p60v-2 {
+    padding-top: 60px;
+}
 
 .subheadingwhite {
     font-size: 30px;
@@ -488,7 +533,7 @@ body {
         height: 40px;
     }
 
-    .bluebutton {
+    .redbutton {
         padding: 16px 32px;
         font-size: 16px;
     }
@@ -505,9 +550,9 @@ body {
     .blueheadingbig {
         font-size: 40px;
         font-weight: 600;
-        color: #0069EC;
         line-height: 44px;
     }
+    
 
     .header-container {
         flex-direction: column;
@@ -600,6 +645,56 @@ body {
         flex-direction: column;
     }
 
+    .blueheading-2{
+        text-align: center;
+
+    }
+
+    .why{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .details-middle-2
+    {
+        border: 0px;
+    }
+
+    .zoho-one
+    {
+        flex-direction: column;
+    }
+
+    .zoho-logo
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zoho-test-2
+    {
+     align-items: center;   
+    }
+
+    .left-quote
+    {
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+       
+      }
+
+    .exp{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .mr40 {
         margin-right: 0;
     }
@@ -616,9 +711,9 @@ body {
         height: 40px;
     }
 
-    .bluebutton {
+    .redbutton {
         padding: 16px 32px;
-        font-size: 14px;
+        font-size: 24px;
 
     }
 
@@ -653,10 +748,6 @@ body {
 
     .blueheadingbigger {
         font-size: 34px;
-    }
-
-    .pointer {
-        display: none;
     }
 
     .why-text-cont {
@@ -727,9 +818,14 @@ body {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
+    
     .details-middle {
         margin: 0;
+    }
+
+    .exp{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .header-container {
@@ -740,7 +836,7 @@ body {
         height: 30px;
     }
 
-    .bluebutton {
+    .redbutton {
         padding: 16px 32px;
         font-size: 14px;
     }
