@@ -107,6 +107,16 @@ body {
     color: black;
 }
 
+.btn-fix
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Brands division */
 .Brands-container {
     background-color: #ECECEC;
@@ -177,7 +187,7 @@ body {
 }
 
 .details-middle-2 {
-    border: 3px solid #888;
+    border: 3px solid #88888843;
     border-image-slice: 1;
     border-top: #888;
     border-bottom: #888;
@@ -207,6 +217,26 @@ body {
 .handsimg {
     width: 80%;
 }
+
+.zoho-one-container
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.wrapper {
+    background: url(//www.zohowebstatic.com/sites/zweb/images/zoho_general_pages/zh-one-bg.png) no-repeat;
+    background-size: 70%;
+    width: 490px;
+    height: 700px;
+    position: absolute;
+    z-index: -0;
+    right:  -250px;
+    opacity: 0.8;
+}
+
 
 /* Zoho One Testimonial*/
 
@@ -386,7 +416,7 @@ body {
     padding: 20px 40px;
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     color: #FFFFFF;
 }
@@ -448,7 +478,7 @@ body {
 }
 
 .small {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .bold {
@@ -535,7 +565,7 @@ body {
 
     .redbutton {
         padding: 16px 32px;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .normal {
@@ -665,6 +695,11 @@ body {
         flex-direction: column;
     }
 
+    .wrapper
+    {
+        display: hidden;
+    }
+
     .zoho-logo
     {
         display: flex;
@@ -680,6 +715,11 @@ body {
     .left-quote
     {
         margin-bottom: 20px;
+    }
+
+    .testimonial
+    {
+        flex-direction: column;
     }
 
     .grid-container {
@@ -713,7 +753,7 @@ body {
 
     .redbutton {
         padding: 16px 32px;
-        font-size: 24px;
+        font-size: 22px;
 
     }
 
@@ -731,7 +771,7 @@ body {
     }
 
     .small {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
 
     }
@@ -811,6 +851,11 @@ body {
         justify-content: center;
     }
 
+    .btn-fix
+    {
+        flex-wrap: nowrap;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -838,7 +883,7 @@ body {
 
     .redbutton {
         padding: 16px 32px;
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .normal {
