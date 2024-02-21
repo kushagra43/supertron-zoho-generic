@@ -182,7 +182,7 @@ body {
     padding: 0 20px;
     margin: 0 20px;
     border: 3px solid;
-    border-image: linear-gradient(to bottom, rgba(161, 213, 255, 0) 0%, #000000 46.67%, rgba(161, 213, 255, 0) 100%);
+    border-image: linear-gradient(to bottom, rgba(161, 213, 255, 0) 0%, #575757ac 46.67%, rgba(161, 213, 255, 0) 100%);
     border-image-slice: 1;
 }
 
@@ -195,6 +195,9 @@ body {
 
 /* Why Zoho division */
 
+.why{
+    gap: 10px;
+}
 .whygrid {
     display: grid;
     column-gap: 40px;
@@ -236,6 +239,10 @@ body {
     right:  -250px;
     opacity: 0.8;
 }
+.exp
+{
+    gap: 60px;
+}
 
 
 /* Zoho One Testimonial*/
@@ -247,8 +254,8 @@ body {
 }
 
 .zoho-test {
-    max-width: 600px;
-    margin-right: 20px;
+    max-width: 500px;
+    margin-right: 50px;
 }
 
 .line
@@ -260,14 +267,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 600px;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 400px;
+    margin-left: 100px;
 }
 
 .left-quote
 {
     width: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
 }
 
 /* Offerings */
@@ -441,6 +455,14 @@ body {
     height: auto;
 }
 
+.blueheading-2v {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 58px;
+    max-width: 550px; 
+    height: auto;
+}
+
 .blueheadingbigger {
     font-size: 80px;
     font-weight: 600;
@@ -582,6 +604,12 @@ body {
         font-weight: 600;
         line-height: 44px;
     }
+
+    .blueheadingbig-1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 44px;
+    }
     
 
     .header-container {
@@ -677,12 +705,22 @@ body {
 
     .blueheading-2{
         text-align: center;
+        max-width: none;
+
+    }
+
+    .blueheading-2v{
+        text-align: center;
+        max-width: none;
+        font-size: 36px;
+        line-height: 42px;
 
     }
 
     .why{
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
     .details-middle-2
@@ -707,19 +745,34 @@ body {
         align-items: center;
     }
 
+    .zoho-test
+    {
+        max-width: none;
+        margin-right: 0;
+
+    }
+
     .zoho-test-2
     {
      align-items: center;   
+     max-width: none;
+     margin-left: 0;
+    }
+
+    .pr40{
+        margin-right: 0;
     }
 
     .left-quote
     {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .testimonial
     {
         flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
     }
 
     .grid-container {
@@ -733,6 +786,7 @@ body {
     .exp{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
     .mr40 {
@@ -777,13 +831,19 @@ body {
     }
 
     .blueheadingbig {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .blueheadingbig-1 {
         font-size: 34px;
         line-height: 40px;
         text-align: center;
     }
 
     .header-text-container {
-        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .blueheadingbigger {
@@ -870,10 +930,14 @@ body {
 
     .exp{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .header-container {
+        padding: 20px;
+    }
+
+    .header-glass-morph {
         padding: 20px;
     }
 
@@ -882,8 +946,8 @@ body {
     }
 
     .redbutton {
-        padding: 16px 32px;
-        font-size: 20px;
+        padding: 16px 16px;
+        font-size: 18px;
     }
 
     .normal {
@@ -896,9 +960,21 @@ body {
     }
 
     .blueheadingbig {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 38px;
     }
+    
+
+    .blueheadingbig-1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .blueheadingbigger {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
 
     .Brands-container {
         padding: 0 20px;
@@ -910,4 +986,5 @@ body {
         margin-right: 14px;
         height: 40px;
     }
+
 }
