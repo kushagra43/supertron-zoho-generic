@@ -22,9 +22,9 @@
 
   <!-- Navigation bar -->
   <nav class="nav-container flex center">
-    <div class="flex spacebetween container">
+    <div class="flex spacebetween container"> 
       <img src="/zoho-generic/supertronxzoho.png" alt="" class="navlogo" />
-      <button onclick="topFunction()" class="redbutton">Get Quote Now</button>
+      <button onclick="topNameFunction()" class="redbutton">Get Quote Now</button>
     </div>
   </nav>
 
@@ -40,7 +40,7 @@
           cloud software suite.
         </p>
         <div class="btn-fix">
-          <button onclick="topFunction()" class="redbutton" style="margin-top: 20px;">Get Quote Now</button>
+          <button onclick="topNameFunction()" class="redbutton" style="margin-top: 20px;">Get Quote Now</button>
           <p class="whiteparah small red-blue" style="margin-top: 10px;">
             Special pricing plan available!
           </p>
@@ -55,7 +55,7 @@
             <p class="whiteparah normal mb20 red-blue" style="text-align: left; font-weight: 600">
               Get Quote Today!
             </p>
-            <input name="first_name" type="text" class="header-input mb20" placeholder="Full Name" />
+            <input name="first_name" type="text" class="header-input mb20" placeholder="Full Name" id="fullName" />
             <!-- <input
                 name="last_name"
                 type="text"
@@ -411,6 +411,25 @@
         });
       }
     }
+    function topNameFunction() {
+  // Get the element with id "fullName"
+  var fullNameInput = document.getElementById("fullName");
+
+  // Check if the element exists
+  if (fullNameInput) {
+    // Calculate the target position as 80 pixels above the element
+    var targetPosition = fullNameInput.offsetTop - 150;
+
+    // Scroll to the target position with smooth behavior
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+
+    // Focus on the input element
+    fullNameInput.focus();
+  }
+}
   </script>
 </body>
 
