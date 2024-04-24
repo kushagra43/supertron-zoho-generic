@@ -4,6 +4,17 @@ document.querySelector("#myForm").addEventListener("submit", function (e) {
   // Collect form data
   let formData = new FormData(this);
 
+  const email = formData.get("email");
+  if (email.endsWith("@qu.edu.qa")) {
+    // Show error message
+    document.querySelector("#emailError").innerHTML =
+      "Sorry, submissions from this domain are not allowed.";
+    document.querySelector("#emailError").style.color = "red";
+    document.querySelector("#emailError").style.display = "block";
+    return;
+  }
+
+
   const number = formData.get("mobilephone");
 
   var expr = /^(0|91)?[6-9][0-9]{9}$/;
